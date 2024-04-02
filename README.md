@@ -32,3 +32,4 @@ awk -f format_error.awk test
       at <.Values.identityKeycloak.service.ports>:
  wrong type for value; expected map[string]interface {}; got interface {}
 ```
+![2024-04-02-152845_grim](https://github.com/jessesimpson36/helm_error_format/assets/19277629/46b41b08-13cf-489a-96a2-fd8c797016b3)
