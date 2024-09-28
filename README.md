@@ -35,3 +35,16 @@ awk -f format_error.awk test
 
 ## Output with color
 ![2024-04-02-152845_grim](https://github.com/jessesimpson36/helm_error_format/assets/19277629/46b41b08-13cf-489a-96a2-fd8c797016b3)
+
+
+## vim error format
+
+In vim, there is a variable called `errorformat` which is used to navigate the files of a stacktrace within the quickfix menu.  Here is an errorformat + function you can add to your vimrc to read the newly formatted stacktrace:
+
+```
+function! HelmErrorFormat()
+  set efm=%.%#\ \ \ template:\ %f:%l:%c:
+endfunction
+
+nmap <silent> <leader>gh :call HelmErrorFormat()<CR>:cf<CR>:copen<CR><CR>
+```
